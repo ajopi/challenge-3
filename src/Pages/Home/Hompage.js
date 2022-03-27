@@ -32,10 +32,7 @@ export const Hompage = () => {
                     </a>
                 </div>
 
-                {/* <img alt='' src={logoTruck} className='logo-truck' />
-                <div className='tag'>
-                    Cars
-                </div> */}
+                
             </div>
 
             <div className='navbar-content'>

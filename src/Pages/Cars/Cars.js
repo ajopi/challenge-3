@@ -18,45 +18,7 @@ import { Button, Card, CardGroup, Container, Dropdown, DropdownButton, Form, For
 import './Cars.css'
 
 export const Cars = () => {
-    const dataTable = () => {
-        let data = [];
-        for (let i = 0; i < 10; i++) {
-            data.push(
-                <tr>
-                    <td>{i + 1}</td>
-                    <td>User Email</td>
-                    <td>Car{i + 1}</td>
-                    <td>Start Rent</td>
-                    <td>Finish Rent</td>
-                    <td>Price</td>
-                    <td>Status</td>
-                </tr>
-            );
-        }
-        return data;
-    }
-
-    const dataTable2 = () => {
-        let data = [];
-        for (let i = 0; i < 10; i++) {
-            data.push(
-                <tr>
-                    <td>{i + 1}</td>
-                    <td>Name</td>
-                    <td>Ctegory</td>
-                    <td>Price</td>
-                    <td>Start rent</td>
-                    <td>Finish Rent</td>
-                    <td>Created at</td>
-                    <td>Updated at</td>
-                </tr>
-            );
-        }
-        return data;
-    }
-
     return (
-        <div>
             <div className='main-container'>
                 <div className='container-dashboard'>
                     <img alt='' src={logoKotak} className='logo-kotak' />
@@ -77,10 +39,7 @@ export const Cars = () => {
                         </a>
                     </div>
 
-                    {/* <img alt='' src={logoTruck} className='logo-truck' />
-        <div className='tag'>
-            Cars
-        </div> */}
+                    
                 </div>
 
                 <div className='navbar-content'>
@@ -151,7 +110,7 @@ export const Cars = () => {
                                 <div className='dashboard-3-cars'>
                                     List Cars
                                     <div className='container-btn-new-car'>
-                                        <Button variant="primary" className='btn-new-car'>+ Add New Car</Button>{' '}
+                                        <Button variant="primary" className='btn-new-car' href='new-cars'>+ Add New Car</Button>{' '}
                                     </div>
 
                                 </div>
@@ -453,9 +412,6 @@ export const Cars = () => {
 
                                         </Card.Body>
                                     </Card>
-                                    
-
-
                                 </div>
 
                             </div>
@@ -465,6 +421,5 @@ export const Cars = () => {
 
 
             </div>
-        </div>
     )
 }
